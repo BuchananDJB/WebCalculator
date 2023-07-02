@@ -4,7 +4,7 @@ import "./CalculatorButton.css";
 function CalculatorButton(props) {
     return (
         <button 
-            className={props.buttonWidthClassName}
+            className="calculator-button"
             onClick={props.onClick}
         >
             {props.buttonText}

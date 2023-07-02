@@ -1,4 +1,4 @@
-.single-width-button {
+.calculator-button {
     background: #BECEED;
     border: 2px inset #37496E;
     border-radius: 50%;
@@ -13,6 +13,10 @@
     transition: background-color 0.3s ease;
 }
 
-.single-width-button:hover {
+.calculator-button:hover {
     background-color:#78A0F0;
+}
+
+.calculator-button:active {
+    background-color: #6887c5;
 }

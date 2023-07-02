@@ -1,9 +1,9 @@
 body {
-    background-color: #95A1BA;
+    background-color:#37496E;
 }
 
 .calculator-container {
-    background-color: #95A1BA;
+    background-color: #37496E;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@ body {
     background-color:#95A1BA;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 
 .number-display {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Calculator.css";
-import { Operation } from "../Utils/MathOperation.js"
+import { Operation } from "./Utils/MathOperation.js"
 import CalculatorButton from "./CalculatorButton/CalculatorButton";
 
 class Calculator extends React.Component {
@@ -124,30 +124,30 @@ class Calculator extends React.Component {
                     <div className="number-display">{this.state.displayedValue}</div>
                     <hr className="separator" />
                     <div className="button-grid">
-                        <CalculatorButton buttonText="←" buttonWidthClassName="single-width-button" onClick={() => this.handleDeleteClicked()}></CalculatorButton>
-                        <CalculatorButton buttonText="C" buttonWidthClassName="single-width-button" onClick={() => this.clear()}></CalculatorButton>
-                        <CalculatorButton buttonText="CE" buttonWidthClassName="single-width-button" onClick={() => this.clearEverything()}></CalculatorButton>
-                        <CalculatorButton buttonText="÷" buttonWidthClassName="single-width-button" onClick={() => this.handleOperationClicked(Operation.DIVIDE)}></CalculatorButton>
+                        <CalculatorButton buttonText="←" onClick={() => this.handleDeleteClicked()}></CalculatorButton>
+                        <CalculatorButton buttonText="C" onClick={() => this.clear()}></CalculatorButton>
+                        <CalculatorButton buttonText="CE" onClick={() => this.clearEverything()}></CalculatorButton>
+                        <CalculatorButton buttonText="÷" onClick={() => this.handleOperationClicked(Operation.DIVIDE)}></CalculatorButton>
 
-                        <CalculatorButton buttonText="7" buttonWidthClassName="single-width-button" onClick={() => this.handleNumberClicked(7)}></CalculatorButton>
-                        <CalculatorButton buttonText="8" buttonWidthClassName="single-width-button" onClick={() => this.handleNumberClicked(8)}></CalculatorButton>
-                        <CalculatorButton buttonText="9" buttonWidthClassName="single-width-button" onClick={() => this.handleNumberClicked(9)}></CalculatorButton>
-                        <CalculatorButton buttonText="×" buttonWidthClassName="single-width-button" onClick={() => this.handleOperationClicked(Operation.MULTIPLY)}></CalculatorButton>
+                        <CalculatorButton buttonText="7" onClick={() => this.handleNumberClicked(7)}></CalculatorButton>
+                        <CalculatorButton buttonText="8" onClick={() => this.handleNumberClicked(8)}></CalculatorButton>
+                        <CalculatorButton buttonText="9" onClick={() => this.handleNumberClicked(9)}></CalculatorButton>
+                        <CalculatorButton buttonText="×" onClick={() => this.handleOperationClicked(Operation.MULTIPLY)}></CalculatorButton>
 
-                        <CalculatorButton buttonText="4" buttonWidthClassName="single-width-button" onClick={() => this.handleNumberClicked(4)}></CalculatorButton>
-                        <CalculatorButton buttonText="5" buttonWidthClassName="single-width-button" onClick={() => this.handleNumberClicked(5)}></CalculatorButton>
-                        <CalculatorButton buttonText="6" buttonWidthClassName="single-width-button" onClick={() => this.handleNumberClicked(6)}></CalculatorButton>
-                        <CalculatorButton buttonText="-" buttonWidthClassName="single-width-button" onClick={() => this.handleOperationClicked(Operation.SUBTRACT)}></CalculatorButton>
+                        <CalculatorButton buttonText="4" onClick={() => this.handleNumberClicked(4)}></CalculatorButton>
+                        <CalculatorButton buttonText="5" onClick={() => this.handleNumberClicked(5)}></CalculatorButton>
+                        <CalculatorButton buttonText="6" onClick={() => this.handleNumberClicked(6)}></CalculatorButton>
+                        <CalculatorButton buttonText="-" onClick={() => this.handleOperationClicked(Operation.SUBTRACT)}></CalculatorButton>
 
-                        <CalculatorButton buttonText="1" buttonWidthClassName="single-width-button" onClick={() => this.handleNumberClicked(1)}></CalculatorButton>
-                        <CalculatorButton buttonText="2" buttonWidthClassName="single-width-button" onClick={() => this.handleNumberClicked(2)}></CalculatorButton>
-                        <CalculatorButton buttonText="3" buttonWidthClassName="single-width-button" onClick={() => this.handleNumberClicked(3)}></CalculatorButton>
-                        <CalculatorButton buttonText="+" buttonWidthClassName="single-width-button" onClick={() => this.handleOperationClicked(Operation.ADD)}></CalculatorButton>
+                        <CalculatorButton buttonText="1" onClick={() => this.handleNumberClicked(1)}></CalculatorButton>
+                        <CalculatorButton buttonText="2" onClick={() => this.handleNumberClicked(2)}></CalculatorButton>
+                        <CalculatorButton buttonText="3" onClick={() => this.handleNumberClicked(3)}></CalculatorButton>
+                        <CalculatorButton buttonText="+" onClick={() => this.handleOperationClicked(Operation.ADD)}></CalculatorButton>
 
-                        <CalculatorButton buttonText="0" buttonWidthClassName="single-width-button" onClick={() => this.handleNumberClicked(0)}></CalculatorButton>
-                        <CalculatorButton buttonText="±" buttonWidthClassName="single-width-button" onClick={() => this.handlePlusMinusClicked()}></CalculatorButton>
-                        <CalculatorButton buttonText="." buttonWidthClassName="single-width-button" onClick={() => this.handleDecimalClicked()}></CalculatorButton>
-                        <CalculatorButton buttonText="=" buttonWidthClassName="single-width-button" onClick={() => this.performOperation()}></CalculatorButton>
+                        <CalculatorButton buttonText="0" onClick={() => this.handleNumberClicked(0)}></CalculatorButton>
+                        <CalculatorButton buttonText="±" onClick={() => this.handlePlusMinusClicked()}></CalculatorButton>
+                        <CalculatorButton buttonText="." onClick={() => this.handleDecimalClicked()}></CalculatorButton>
+                        <CalculatorButton buttonText="=" onClick={() => this.performOperation()}></CalculatorButton>
                     </div>
                 </div>
             </div>
