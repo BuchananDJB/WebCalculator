@@ -48,3 +48,7 @@ This will start the calculator application on http://localhost:3000.
 - Toggle positive/negative numbers using the ± button.
 - Use the decimal button (.) to input decimal numbers.
 - Press the "=" button to perform the selected operation and display the result.
+
+## Known Bugs
+- Currently does not support consecutive operations without using the "=" button.
+    e.g. These exact inputs: '5 + 5 + 5 + 5 =' produce a result of 10 rather than 20.
